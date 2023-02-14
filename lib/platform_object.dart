@@ -13,20 +13,20 @@ class PlatformObject<T> {
       T? linux,
       T? windows,
       T? fuchsia}) {
-    if (Platform.isAndroid) {
-      value = android!;
-    } else if (Platform.isIOS) {
-      value = ios!;
-    } else if (Platform.isLinux) {
-      value = linux!;
-    } else if (Platform.isMacOS) {
-      value = macosx!;
-    } else if (Platform.isWindows) {
-      value = windows!;
-    } else if (Platform.isFuchsia) {
-      value = fuchsia!;
-    } else if (kIsWeb) {
-      value = web!;
+    if (Platform.isAndroid && android != null) {
+      value = android;
+    } else if (Platform.isIOS && ios != null) {
+      value = ios;
+    } else if (Platform.isLinux && linux != null) {
+      value = linux;
+    } else if (Platform.isMacOS && macosx != null) {
+      value = macosx;
+    } else if (Platform.isWindows && windows != null) {
+      value = windows;
+    } else if (Platform.isFuchsia && fuchsia != null) {
+      value = fuchsia;
+    } else if (kIsWeb && web != null) {
+      value = web;
     }
     assert(value != null, "Object for platform is not recognized.");
   }

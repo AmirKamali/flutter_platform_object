@@ -1,7 +1,7 @@
 name: platform_object
-description: A new Flutter package project.
+description: Useful package to improve quality of coding by reducing branching of code for each platform
 version: 1.0.0
-homepage:
+homepage: https://github.com/AmirKamali/flutter_platform_object
 
 environment:
   sdk: '>=2.19.0 <3.0.0'
